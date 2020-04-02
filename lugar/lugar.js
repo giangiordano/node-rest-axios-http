@@ -17,7 +17,7 @@ const getLugar = async(direccion) => {
         throw new Error(`Ninguna locacion encontrada: ${ direccion }`);
     }
 
-    const data = respuesta.data.Results[0]
+    const data = respuesta.data.Results[0];
     const direcc = data.name;
     const lat = data.lat;
     const lng = data.lon;
